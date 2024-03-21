@@ -1,0 +1,115 @@
+/* Fuente personalizada */
+@font-face {
+    font-family: 'Gloock-Regular';
+    src: url('fonts/Gloock-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gloock-Regular';
+    src: url('fonts/Gloock-Regular.ttf') format('truetype');
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gloock-Regular', sans-serif;
+    background-color: #ff9dd9;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    text-align: center;
+}
+
+.text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ca7a0a68;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #c8b61465;
+}
+
+.flower-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.flower {
+    width: 50px;
+    height: 50px;
+    animation: giro 4s linear infinite;
+}
+
+/* Estilos para las hojas de la flor */
+.leaf {
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 225, 0);
+    border-radius: 2px 50px;
+    opacity: 0.8;
+    box-shadow: -5px -5px 2px rgba(0, 0, 0, 0.051);
+}
+
+.dot {
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    background-color: #3a300855;
+    border-radius: 50%;
+    animation: dot 4s ease-in-out infinite;
+}
+
+/* Estilos para las hojas de la flor */
+.leaf-0 { transform: rotate(0deg) translate(-35px, -35px) scale(2); }
+.leaf-1 { transform: rotate(22.5deg) translate(-35px, -35px) scale(2); }
+.leaf-2 { transform: rotate(45deg) translate(-35px, -35px) scale(2); }
+.leaf-3 { transform: rotate(67.5deg) translate(-35px, -35px) scale(2); }
+.leaf-4 { transform: rotate(90deg) translate(-35px, -35px) scale(2); }
+.leaf-5 { transform: rotate(112.5deg) translate(-35px, -35px) scale(2); }
+.leaf-6 { transform: rotate(135deg) translate(-35px, -35px) scale(2); }
+.leaf-7 { transform: rotate(157.5deg) translate(-35px, -35px) scale(2); }
+.leaf-8 { transform: rotate(180deg) translate(-35px, -35px) scale(2); }
+.leaf-9 { transform: rotate(202.5deg) translate(-35px, -35px) scale(2); }
+.leaf-10 { transform: rotate(225deg) translate(-35px, -35px) scale(2); }
+.leaf-11 { transform: rotate(247.5deg) translate(-35px, -35px) scale(2); }
+.leaf-12 { transform: rotate(270deg) translate(-35px, -35px) scale(2); }
+.leaf-13 { transform: rotate(292.5deg) translate(-35px, -35px) scale(2); }
+.leaf-14 { transform: rotate(315deg) translate(-35px, -35px) scale(2); }
+.leaf-15 { transform: rotate(337.5deg) translate(-35px, -35px) scale(2); }
+
+/* Animaciones */
+@keyframes giro {
+    0% { transform: scale(0) translate(-35px, -35px); }
+    30% { transform: scale(1) rotate(50deg); }
+    70% { transform: scale(1) rotate(100deg); }
+    80% { transform: scale(1) rotate(180deg); }
+    100% { transform: scale(0); }
+}
+
+@keyframes dot {}
